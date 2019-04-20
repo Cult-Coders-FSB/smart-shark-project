@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Clean Blog - Welcome to Git/Github</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Starting Git/Github</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- end of nav bar -->
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/about-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Git/Github</h1>
+            <span class="subheading">The History, Inner Workings, and Commands.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <h1>What is version control?</h1>
+        <!-- start of the first point -->
+        <p>
+          Version control is a task of keeping a software system that may consist of many versions and configurations that are well organized. Version control software keeps track of every modification to the code in a special kind of database. If an unwanted version of the code is sent to the Version Control System's database it keeps track of the previous version so that the change can be fixed or simply left out. 
+        </p><!-- end of paragraph one-->
+
+          <p>The advantages of this type of software are having the ability to have a team simultaneously work on a project together. Without software like version control, making large scale changes to your project could be risky if they break or if you can't always be in the same room as your team.  Version control systems allow you to compare files, identify differences, and merge the changes if needed before committing any code.
+        </p><!-- end of paragraph two -->
+        <!-- end of first point -->
+
+        <h1>What is Git?</h1>
+        <!-- start of second point -->
+        <p> Git is an open source project developed in 2005 by Linus Travolds, the creator of the Linux operating system. Git has proven the be the fastest and easiest to learn version control software out on the market with an almost scary number of commercial projects being done in collaboration with Git. Developers who have worked with Git have a leading level of prestige followed with their confidence in the ability of the program which is why it has risen to the status it does now in the developed world. Many versions of control systems can be used, some are free but the most commonly used is Git.</p><!-- end of paragraph one -->
+        <!-- end of second point -->
+
+        <!-- start of references -->
+        <h2> Git Command References</h2>
+        <p> Init: "init" defined as initialize, sets up git to begin tracking changes to the project. Common practice is to follow up with the "git status" command to verify that indeed you are working within that directory and changes are being tracked.</p>
+
+        <p>Add: "git add" begins to add files to the staging area. There are multiple ways of using this tag.  "git add filename-1.txt filename-2.txt" Here we are adding multiple files at once</p>
+
+        <p>Commit:  this is the last step in the git workflow. A commit permanently stores changes from the staging area inside the repository.  
+
+        1)prior to this you must add a mesage and to do so the command is "git commit -m "Here's the example". Here the "-m" stands for message. Your message should be within quotation marks, written in the present tense and within 50 characters. </p>
+
+        <p>Push: The git push command is used to upload local repository content to a remote repository.  The git push is most commonly used to publish and upload local changes to a central repository. After a local repository has been modified a push is executed to share the modifications with remote team members.git add brncgit status  
+
+          1)git push &lt;remote&gt; &lt;branch&gt;: Here you are pushing the specified barnch to &lt;remote&gt;. This creates a local brach in the destinantion repository. Git will prevent the push if it threatens overwriting commits in the desitination repository. 
+
+           2)git push &lt;remote&gt; --force: Same as the above command but will force the push disregaring overwrites. 
+
+            3)git push &lt;remote&gt; --all: Push all of your local branches to the specified remote.  
+
+              4)git push &lt;remote&gt; --tags Push won't automatically send all of your tags along with the local branches. This command will send all tags to the remote repository.</p>
+              <!-- end of references -->
+
+            <h1>Three stages of Git and the Commands</h1>
+            <!-- start of point three heading   -->
+          <h3>There are three stages of Git. All being equally important.</h3>
+          <!-- start of point three sub-heading -->
+
+       <ol>
+        <!-- start of ordered list -->
+          <li>Untracked: the file exists, but is not part of git's version control.
+          </li>
+
+          <li>Staged: the file has been added to Git's version control but changes have not been committed. 
+          </li>
+          
+          <li>Committed: the change has been committed to the newest version of the "final product" because nothing is truly finished or perfect in code.
+          </li>
+       </ol> 
+       <!-- end of ordered list -->
+       
+       <h3>Here are some of the commands that enact those stages of Git. </h3>
+       <!-- start of the fourth point -->
+
+       <p>Some of the power from this program comes from its intuitive commands within, some of most used for Git is "git init", "git add", "git commit", "git push". these commands start with the initialization of a git project, the "git init" does this making a new repository. To add code to a file such as HTML we can use the command "git add" this adds all modified and new files in the current directory to the staging area, hence preparing them for the next command. Next is the "git commit" input is used to save your changes to the local repository or Master file.</p>
+       <!-- end of paragraph -->
+      <ol>
+
+        <li>Git Pull & Fetch</li>
+
+           <p>Git pull and fetch are use to download content from sources like Github. This tool is a remote repository or files safe for team projects, be it localized or remote.</p>
+
+        <li>Git Branch</li>
+
+           <p>A git branch is a lightweight moveable pointer to one of these commits. Branching allows the user to create a separate page away from the master to work on without affecting the master file. Branches are a local version of the master with new content inside them.</p>
+
+        <li>Git Merge</li>
+
+           <p>This command is git's way of piecing together your downloaded and revised version of the master branch with the newest version. the git merges command (git merge "branch name" and where "branch name") will tell the branch what is merging and where. In most cases, this is fairly linear</p>
+
+      </ol>
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; Your Website 2019</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
